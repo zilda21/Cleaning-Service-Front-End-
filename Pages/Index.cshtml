@@ -1,0 +1,454 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Hjem";
+    ViewData["BodyClass"] = "index-page";
+}
+
+<!-- HERO -->
+<section id="hero" class="hero section">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center gy-5">
+
+            <div class="col-lg-6">
+                <h1 class="mb-3">Professionel rengøring til hjem og erhverv</h1>
+
+                <p class="mb-3">
+                    Hos THS Pleje tilbyder vi både privat- og erhvervsrengøring med et stærkt fokus på kvalitet og service.
+                    Uanset om det er dit hjem eller din virksomhed, kan du forvente en skinnende ren og indbydende atmosfære.
+                </p>
+
+                <p class="mb-3">
+                    Vores engagerede team tilpasser rengøringen efter dine behov og sikrer,
+                    at du altid kommer hjem eller tilbage til et sted, der er både rent og behageligt.
+                </p>
+
+                <p class="fw-semibold mb-4">
+                    Vi er mere end blot et rengøringsfirma – vi er din pålidelige partner, der gør en forskel i din hverdag.
+                </p>
+
+                <div class="d-flex flex-wrap gap-3">
+                    <a class="btn btn-brand" href="#contact">Kontakt os</a>
+                    <a class="btn btn-brand-outline" href="#services">Se services</a>
+                </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+                <img src="~/assets/img/hero/hero-cleaning-kitchen.jpg"
+                     alt="Professionel rengøring i hjemmet"
+                     class="img-fluid rounded-4 shadow-lg"
+                     loading="lazy">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- HIGHLIGHTS (4 ICONS) -->
+<section class="section light-background ths-features">
+    <div class="container" data-aos="fade-up">
+        <div class="row g-4">
+
+            <div class="col-md-6 col-xl-3" data-aos="zoom-in" data-aos-delay="100">
+                <div class="ths-feature">
+                    <div class="ths-icon"><i class="bi bi-stars"></i></div>
+                    <h4>Kvalitet i fokus</h4>
+                    <p>Grundig rengøring og et flot resultat – hver gang.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-3" data-aos="zoom-in" data-aos-delay="200">
+                <div class="ths-feature">
+                    <div class="ths-icon"><i class="bi bi-calendar-check"></i></div>
+                    <h4>Fleksible aftaler</h4>
+                    <p>Dagligt, ugentligt eller månedligt – du vælger.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-3" data-aos="zoom-in" data-aos-delay="300">
+                <div class="ths-feature">
+                    <div class="ths-icon"><i class="bi bi-people"></i></div>
+                    <h4>Dedikeret team</h4>
+                    <p>Venlig, stabil og professionel service.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-3" data-aos="zoom-in" data-aos-delay="400">
+                <div class="ths-feature">
+                    <div class="ths-icon"><i class="bi bi-shield-check"></i></div>
+                    <h4>Pålidelig partner</h4>
+                    <p>Tryghed og orden i hverdagen – uden bekymringer.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES (IMAGE + PURPLE PANEL) -->
+<section id="services" class="section ths-services">
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Rengøring og pleje – tilpasset dine behov</p>
+    </div>
+
+    <div class="container">
+
+        <!-- 1) Cleaning at THS Pleje -->
+        <div class="row align-items-center g-5 ths-split is-normal mb-5">
+            <div class="col-lg-7 ths-media" data-aos="fade-right" data-aos-delay="100">
+                <img src="~/assets/img/services/Firstphotos.png" alt="Rengøring hos THS Pleje" class="ths-img-contain" loading="lazy">
+            </div>
+            <div class="col-lg-5" data-aos="fade-left" data-aos-delay="200">
+                <div class="ths-panel">
+                    <div class="ths-tag"><i class="bi bi-sparkles"></i><span>THS Pleje &amp; Rengøring</span></div>
+                    <h2>Rengøring hos THS Pleje</h2>
+                    <p>
+                        Hos THS Pleje tilbyder vi både privat- og erhvervsrengøring med et stærkt fokus på kvalitet og service.
+                        Uanset om det er dit hjem eller din virksomhed, kan du forvente en skinnende ren og indbydende atmosfære.
+                    </p>
+                    <p>
+                        Vores engagerede team tilpasser rengøringen efter dine behov og sikrer, at du altid kommer hjem
+                        eller tilbage til et sted, der er både rent og behageligt.
+                    </p>
+                    <p class="mb-0 fw-semibold">
+                        Vi er mere end blot et rengøringsfirma – vi er din pålidelige partner, der gør en forskel i din hverdag.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2) Private cleaning (reverse) -->
+        <div class="row align-items-center g-5 ths-split is-reverse mb-5">
+            <div class="col-lg-5 order-2 order-lg-1" data-aos="fade-right" data-aos-delay="100">
+                <div class="ths-panel">
+                    <div class="ths-tag"><i class="bi bi-house-heart"></i><span>Privat</span></div>
+                    <h2>Privat rengøring</h2>
+                    <p>
+                        Vi sørger for, at dit hjem altid er skinnende rent, så du kan nyde din tid uden at bekymre dig om rengøring.
+                    </p>
+                    <p class="mb-0">
+                        Vi skræddersyr løsninger efter dine behov – uanset om du ønsker daglig, ugentlig eller månedlig rengøring.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-7 order-1 order-lg-2 ths-media" data-aos="fade-left" data-aos-delay="200">
+                <img src="~/assets/img/services/private-cleaning-kitchen.jpg" alt="Privat rengøring i hjemmet" loading="lazy">
+            </div>
+        </div>
+
+        <!-- 3) Commercial cleaning -->
+        <div class="row align-items-center g-5 ths-split is-normal mb-5">
+            <div class="col-lg-7 ths-media" data-aos="fade-right" data-aos-delay="100">
+                <img src="~/assets/img/hero/hero-cleaning-kitchen.jpg" alt="Erhvervsrengøring" loading="lazy">
+            </div>
+            <div class="col-lg-5" data-aos="fade-left" data-aos-delay="200">
+                <div class="ths-panel">
+                    <div class="ths-tag"><i class="bi bi-building"></i><span>Erhverv</span></div>
+                    <h2>Erhvervsrengøring</h2>
+                    <p>
+                        Vi tilbyder professionel erhvervsrengøring, der giver dit arbejdsmiljø et professionelt og velholdt udtryk.
+                    </p>
+                    <p class="mb-0">
+                        Vores fleksible løsninger tilpasses virksomhedens størrelse og specifikke krav,
+                        så du kan fokusere på det vigtigste – din forretning.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4) Home care (reverse) -->
+        <div class="row align-items-center g-5 ths-split is-reverse">
+            <div class="col-lg-5 order-2 order-lg-1" data-aos="fade-right" data-aos-delay="100">
+                <div class="ths-panel">
+                    <div class="ths-tag"><i class="bi bi-heart-pulse"></i><span>Hjælp i hverdagen</span></div>
+                    <h2>Privat hjemmepleje og andre ydelser</h2>
+                    <p>
+                        Ud over rengøring tilbyder vi privat hjemmepleje, hjælp til indkøb og andre praktiske ydelser i hjemmet.
+                    </p>
+                    <p class="mb-0">
+                        Vi skaber en tryg og velfungerende hverdag ved at tage hånd om de praktiske opgaver.
+                        Med vores hjælp får du mere energi til at nyde livet – uden bekymringer.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-7 order-1 order-lg-2 ths-media" data-aos="fade-left" data-aos-delay="200">
+                <img src="~/assets/img/services/private-home-care.jpg" alt="Privat hjemmepleje og hjælp i hjemmet" class="ths-img-small" loading="lazy">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- REVIEWS / TESTIMONIALS (from template) -->
+<section id="reviews" class="testimonials section light-background">
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Anmeldelser</h2>
+        <p>Det siger kunderne</p>
+    </div>
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="testimonial-slider swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": { "delay": 4000 },
+              "slidesPerView": 1,
+              "spaceBetween": 30,
+              "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" },
+              "breakpoints": {
+                "768": { "slidesPerView": 2 },
+                "1200": { "slidesPerView": 3 }
+              }
+            }
+            </script>
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="testimonial-header">
+                            <img src="~/assets/img/person/person-f-12.webp" alt="Kunde" class="img-fluid" loading="lazy">
+                            <div class="rating">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-body">
+                            <p>Super grundig og venlig service. Hjemmet føles altid friskt og indbydende efter besøget.</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <h5>Maria</h5>
+                            <span>Privat rengøring</span>
+                            <div class="quote-icon"><i class="bi bi-chat-quote-fill"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="testimonial-header">
+                            <img src="~/assets/img/person/person-m-8.webp" alt="Kunde" class="img-fluid" loading="lazy">
+                            <div class="rating">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-body">
+                            <p>Fleksibel aftale og høj kvalitet. Vores kontor fremstår altid professionelt og velholdt.</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <h5>Jonas</h5>
+                            <span>Erhvervsrengøring</span>
+                            <div class="quote-icon"><i class="bi bi-chat-quote-fill"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="testimonial-header">
+                            <img src="~/assets/img/person/person-f-6.webp" alt="Kunde" class="img-fluid" loading="lazy">
+                            <div class="rating">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-body">
+                            <p>Tryg hjælp i hverdagen. Det gør en kæmpe forskel at få støtte til de praktiske ting.</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <h5>Anne</h5>
+                            <span>Hjemmepleje</span>
+                            <div class="quote-icon"><i class="bi bi-chat-quote-fill"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT (end) -->
+<section id="contact" class="contact section">
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Kontakt</h2>
+        <p>Fortæl os hvad du har brug for – så vender vi hurtigt tilbage</p>
+    </div>
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-stretch">
+
+            <!-- FORM -->
+            <div class="col-lg-7 order-lg-1 order-2" data-aos="fade-right" data-aos-delay="200">
+                <div class="contact-form-container">
+                    <div class="form-intro">
+                        <h2>Send en besked</h2>
+                        <p>Udfyld formularen, så kontakter vi dig hurtigst muligt.</p>
+                    </div>
+
+                    <form id="thsContactForm" class="contact-form">
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <div class="form-field">
+                                    <input type="text" name="firstName" class="form-input" id="firstName" placeholder="Fornavn" required>
+                                    <label for="firstName" class="field-label">Fornavn</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-field">
+                                    <input type="text" name="lastName" class="form-input" id="lastName" placeholder="Efternavn" required>
+                                    <label for="lastName" class="field-label">Efternavn</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <div class="form-field">
+                                    <input type="email" class="form-input" name="email" id="email" placeholder="Email" required>
+                                    <label for="email" class="field-label">Email</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-field">
+                                    <input type="tel" class="form-input" name="phone" id="phone" placeholder="Telefon">
+                                    <label for="phone" class="field-label">Telefon</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="form-field">
+                            <select name="service" class="form-input" id="service" required>
+                                <option value="" selected disabled>Vælg service</option>
+                                <option value="Privat rengøring">Privat rengøring</option>
+                                <option value="Erhvervsrengøring">Erhvervsrengøring</option>
+                                <option value="Privat hjemmepleje og andre ydelser">Privat hjemmepleje og andre ydelser</option>
+                            </select>
+                            <label for="service" class="field-label">Service</label>
+                        </div>
+
+                        <div class="form-field message-field">
+                            <textarea class="form-input message-input" name="message" id="message" rows="5" placeholder="Skriv din besked" required></textarea>
+                            <label for="message" class="field-label">Besked</label>
+                        </div>
+
+                        <button type="submit" class="send-button">
+                            Send besked
+                            <span class="button-arrow">→</span>
+                        </button>
+
+                        <div id="thsFormNote" class="ths-form-note">Tak! Din besked er sendt. Vi kontakter dig hurtigst muligt.</div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- SIDEBAR -->
+            <div class="col-lg-5 order-lg-2 order-1" data-aos="fade-left" data-aos-delay="300">
+                <div class="contact-sidebar">
+                    <div class="contact-header">
+                        <h3>Kontaktoplysninger</h3>
+                        <p>Du er også velkommen til at kontakte os direkte.</p>
+                    </div>
+
+                    <div class="contact-methods">
+
+                        <div class="contact-method" data-aos="fade-in" data-aos-delay="350">
+                            <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
+                            <div class="contact-details">
+                                <span class="method-label">Adresse</span>
+                                <p>Gersagerparken 109<br>2670 Greve, Danmark</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method" data-aos="fade-in" data-aos-delay="400">
+                            <div class="contact-icon"><i class="bi bi-envelope"></i></div>
+                            <div class="contact-details">
+                                <span class="method-label">Email</span>
+                                <p><a href="mailto:info@ths-pleje.dk">info@ths-pleje.dk</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method" data-aos="fade-in" data-aos-delay="450">
+                            <div class="contact-icon"><i class="bi bi-telephone"></i></div>
+                            <div class="contact-details">
+                                <span class="method-label">Telefon</span>
+                                <p><a href="tel:+4530117762">+45 30 11 77 62</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method" data-aos="fade-in" data-aos-delay="500">
+                            <div class="contact-icon"><i class="bi bi-clock"></i></div>
+                            <div class="contact-details">
+                                <span class="method-label">Åbningstider</span>
+                                <p>Mandag – Fredag: 08:00 – 18:00<br>Lørdag: Efter aftale</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="connect-section" data-aos="fade-up" data-aos-delay="550">
+                        <span class="connect-label">Følg os</span>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 rounded-4 overflow-hidden" style="box-shadow: 0 16px 40px rgba(0,0,0,.08);">
+                        <iframe
+                            title="Kort"
+                            src="https://www.google.com/maps?q=Gersagerparken%20109,%202670%20Greve,%20Denmark&output=embed"
+                            loading="lazy"
+                            style="border:0; width:100%; height:260px;"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+<script>
+(function () {
+  const form = document.getElementById("thsContactForm");
+  const note = document.getElementById("thsFormNote");
+  if (!form || !note) return;
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // Basic front-end validation
+    const requiredIds = ["firstName", "lastName", "email", "service", "message"];
+    for (const id of requiredIds) {
+      const el = document.getElementById(id);
+      if (!el || !el.value || !el.value.trim()) {
+        el && el.focus();
+        return;
+      }
+    }
+
+    // Show success, reset
+    note.style.display = "block";
+    form.reset();
+
+    // Hide after a few seconds
+    setTimeout(() => { note.style.display = "none"; }, 6000);
+  });
+})();
+</script>
+}
